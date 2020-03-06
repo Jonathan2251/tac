@@ -1,0 +1,14 @@
+https://en.wikipedia.org/wiki/Just-in-time_compilation
+
+JIT advantages:
+  Compare to interpreter
+    IR is almost same size to source code
+    MI can be one-time-compiled and run it again and again
+  Better performance than static compilation, as many optimizations are only feasible at run-time
+    Run time binding languages (dynamic/late binding)
+    Choose SSE2 vector CPU instructions
+    Static compilation uses profile+recompilation; JIT no need recompilation
+  ...
+
+Compile Java language to Byte code is slow, but compile Byte code to machine code is fast.
+Compile high level languages to llvm ir is slow, but compile llvm ir to machine code is fast.
